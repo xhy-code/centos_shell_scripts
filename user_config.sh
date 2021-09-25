@@ -15,8 +15,6 @@ sed -i "100a ${text}" /etc/sudoers
 echo "[step3]:configure ssh"
 text='#user_config'
 sed -i "140a ${text}" /etc/ssh/sshd_config
-text='AllowUsers xhyssh'
-sed -i "$ a ${text}" /etc/ssh/sshd_config
 text='Protocol 2'
 sed -i "$ a ${text}" /etc/ssh/sshd_config
 text='ClientAliveInterval 120'
