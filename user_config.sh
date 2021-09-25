@@ -13,10 +13,6 @@ text='xhyssh  ALL=(ALL) ALL'
 sed -i "100a ${text}" /etc/sudoers
 
 echo "[step3]:configure ssh"
-text='Port 65447'
-sed -i "17a ${text}" /etc/ssh/sshd_config
-text='PermitRootLogin no'
-sed -i "39c ${text}" /etc/ssh/sshd_config
 text='#user_config'
 sed -i "140a ${text}" /etc/ssh/sshd_config
 text='AllowUsers xhyssh'
