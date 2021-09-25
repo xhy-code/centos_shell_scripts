@@ -20,8 +20,12 @@ sed -i "38c ${text}" /etc/ssh/sshd_config
 text='#user_config'
 sed -i "140a ${text}" /etc/ssh/sshd_config
 text='AllowUsers xhyssh'
-sed -i "$a ${text}" /etc/ssh/sshd_config
+sed -i "$ a ${text}" /etc/ssh/sshd_config
 text='Protocol 2'
-sed -i "$a ${text}" /etc/ssh/sshd_config
+sed -i "$ a ${text}" /etc/ssh/sshd_config
+text='ClientAliveInterval 120'
+sed -i "$ a ${text}" /etc/ssh/sshd_config
+text='ClientAliveCountMax 720'
+sed -i "$ a ${text}" /etc/ssh/sshd_config
 
 service sshd restart
