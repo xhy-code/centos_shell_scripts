@@ -30,3 +30,4 @@ chmod o-x *
 chmod o+x su
 chmod o+x cd
 chmod o+x ls
+chmod o+x bash
