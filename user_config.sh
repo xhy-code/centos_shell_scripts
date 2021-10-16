@@ -23,3 +23,10 @@ text='ClientAliveCountMax 720'
 sed -i "$ a ${text}" /etc/ssh/sshd_config
 
 service sshd restart
+
+echo "[step4]:limit ssh-user...."
+cd /bin
+chmod o-x *
+chmod o+x su
+chmod o+x cd
+chmod o+x ls
