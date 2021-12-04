@@ -26,7 +26,7 @@ mv go /usr/local/
 cd /usr/local/
 chmod -R 755 go
 echo "export GOROOT=/usr/local/go" >> /etc/profile
-echo "export PATH=$PATH:$GOROOT/bin" >> /etc/profile
+echo "export PATH=\$PATH:\$GOROOT/bin" >> /etc/profile
 source /etc/profile
 
 echo "[step7]:用户设置........"
