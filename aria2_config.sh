@@ -11,8 +11,6 @@ read Domain
 
 #sed -i 301c\on-download-complete=/root/.aria2c/upload.sh aria2.conf
 
-sed -i 323c\rpc-allow-origin-all=false aria2.conf
-sed -i 326c\rpc-listen-all=false aria2.conf
 sed -i 332c\rpc-secret=xiaohuyanghaoniubi84 aria2.conf
 sed -i 340c\rpc-secure=false aria2.conf
 sed -i 343c\rpc-certificate=/www/server/panel/vhost/ssl/$Domain/fullchain.pem aria2.conf
